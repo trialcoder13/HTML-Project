@@ -12,6 +12,13 @@
         <!--this is a commment-->
         <h1>Heading</h1>
         <hr>
+        <nav>
+            <uL>
+            <li><a href="#start">start</a></li>
+            <li><a href="#mid">mid</a></li>
+            <li><a href="#contact">contact me</a></li>
+        </uL>
+        </nav>
         <section id="start">
         <p> a smaple paragraph
             <br>the br tag is used to add a line break.
@@ -51,20 +58,79 @@
             </ol>
             <br>
         </section>
+        <section id="contact">
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                <legend>Random Querries</legend>
+                <label for="firstname">firstname</label>
+                <input type="text" name="firstname" id="firstname" placeholder="naam" autocomplete="on" required autofocus>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+                <br>
+                <label for="favnum">favNum</label>
+                <input type="number" name="favNum" id="favnum" min="1" max="10" step="1" value="5"><br>
+                <label for="favfood">favFood</label>
+                <select name="favFood" id="favfood" multiple size="5">
+                    <optgroup label="Non-Veg">
+                    <option value="Butter Chicken" >Butter Chicken</option>
+                    <option value="Tandoori Chicken" selected>Tandoori Chicken</option>
+                    <option value="Chicken Chilly">Chicken Chilly</option>
+                    <option value="others">Others</option>
+                </optgroup>
+                <optgroup label="Veg">
+                    <option value="Butter Panner Masala" >Butter Panner Masala</option>
+                    <option value="Allo Dum" selected>Allo Dum</option>
+                    <option value="Paneer Chilly">Paneer Chilly</option>
+                    <option value="others">Others</option>
+                </optgroup>
+                </select>
+                <p>doing the same thing in a different way</p>
+                <P>
+                    <label for="favplaces">favPlaces</label>
+                    <input type="text" name="places" id="favplaces" list="favPlaces">
+                    <datalist id="favPlaces">
+                        <option value="Mountains"></option>
+                        <option value="WaterFalls"></option>
+                        <option value="Beach"></option>
+                        <option value="Hill Stations"></option>
+                    </datalist>
+                </P>
+
+            </fieldset>
+            <fieldset>
+                <legend>Favourite Movie </legend>
+                <input type="radio" name="favmovie" id="batman begins" value="batman begins">
+                <label for="batman begins">Batman Begins</label>
+                <br>
+                <input type="radio" name="favmovie" id="the batman" value="the batman">
+                <label for="the batman">The Batman</label>
+                <br>
+                <input type="radio" name="favmovie" id="dark knight" value="dark knight">
+                <label for="dark knight">Dark Knight</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>A input Field: </legend>
+                <label for="message">Type</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" ></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            </form>
+
+        </section>
             <ol>
                 <p>figguring out different types of links: </p>
                 <li><a href="https://www.google.com/">Google</a></li>
                 <li><p>opening it on new tab</p><a href="https://www.google.com/" target="_blank">Google</a></li>
                 <li><p>connecting a webpage on the same server basically folder<a href="about.html">About</a></p></li>
-                <li><p>adding a navigation section:
-                </p>
-                <nav>
-                    <uL>
-                    <li><a href="#start">start</a></li>
-                    <li><a href="#mid">mid</a></li>
-                </uL>
-                </nav>
-            </li>
+           
             </ol>
             <address>patna
                 <br>hanuman nagar
